@@ -284,7 +284,7 @@ async function onWorkflowDeactivated() {
 					:is-archived="workflow.isArchived"
 					@workflow:deactivated="onWorkflowDeactivated"
 				/>
-				<div v-if="showGitHubButton" :class="[$style['github-button'], 'hidden-sm-and-down']">
+				<!-- <div v-if="showGitHubButton" :class="[$style['github-button'], 'hidden-sm-and-down']">
 					<div :class="$style['github-button-container']">
 						<GithubButton
 							:href="N8N_MAIN_GITHUB_REPO_URL"
@@ -302,7 +302,7 @@ async function onWorkflowDeactivated() {
 							@click="hideGithubButton"
 						/>
 					</div>
-				</div>
+				</div> -->
 			</div>
 			<TabBar
 				v-if="onWorkflowPage"

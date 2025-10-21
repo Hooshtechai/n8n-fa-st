@@ -1023,7 +1023,7 @@ defineExpose({
 		<CanvasArrowHeadMarker :id="arrowHeadMarkerId" />
 
 		<slot name="canvas-background" v-bind="{ viewport }">
-			<CanvasBackground :viewport="viewport" :striped="readOnly" />
+			<!-- <CanvasBackground :viewport="viewport" :striped="readOnly" /> -->
 		</slot>
 
 		<Transition name="minimap">

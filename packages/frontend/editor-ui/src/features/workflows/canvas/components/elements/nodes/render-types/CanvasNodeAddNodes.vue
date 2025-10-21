@@ -70,7 +70,12 @@ function onClick() {
 			:popper-class="$style.tooltip"
 			:show-after="700"
 		>
-			<button :class="$style.button" data-test-id="canvas-plus-button" @click.stop="onClick">
+			<button
+				:class="$style.button"
+				class="rounded-xl"
+				data-test-id="canvas-plus-button"
+				@click.stop="onClick"
+			>
 				<N8nIcon icon="plus" color="foreground-xdark" :size="40" />
 			</button>
 			<template #content>
@@ -110,8 +115,8 @@ function onClick() {
 
 .button {
 	background: var(--color--foreground--tint-2);
-	border: 2px dashed var(--color--foreground--shade-2);
-	border-radius: 8px;
+	border: 2px outset var(--color--foreground--shade-2);
+	border-radius: 45px;
 	padding: 0;
 
 	min-width: 100px;

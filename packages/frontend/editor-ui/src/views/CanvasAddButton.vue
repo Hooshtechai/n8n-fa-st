@@ -68,7 +68,7 @@ const containerCssVars = computed(() => ({
 
 .button {
 	background: var(--color--foreground--tint-2);
-	border: 2px dashed var(--color--foreground--shade-2);
+	border: 2px solid var(--color--foreground--shade-2);
 	border-radius: 8px;
 	padding: 0;
 

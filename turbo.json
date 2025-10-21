@@ -26,7 +26,7 @@
 			"outputs": ["coverage/**", "*.xml"]
 		},
 		"watch": { "cache": false, "persistent": true },
-		"dev": { "cache": false, "persistent": true },
+		"dev": { "cache": false, "persistent": true},
 		"build:playwright": {
 			"dependsOn": ["install-browsers:ci", "build"]
 		},

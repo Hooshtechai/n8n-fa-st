@@ -15,9 +15,11 @@ function handleClick() {
 </script>
 
 <template>
-	<header :class="[$style.container, { [$style.clickable]: isClickable }]" @click="handleClick">
-		<N8nText :class="$style.title" :bold="true" size="small">
-			<slot name="title">{{ title }}</slot>
+	<header :class="[$style.container, { [$style.clickable]: isClickable }]">
+		<!-- @click="handleClick" -->
+		<N8nText :class="$style.title" :bold="true" size="small" class="text-center">
+			<!-- <slot name="title">{{ title }}</slot> -->
+			ساخته شده با 💙 توسط هوشتک
 		</N8nText>
 		<div :class="$style.actions">
 			<slot name="actions" />
