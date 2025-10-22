@@ -50,7 +50,8 @@ onMounted(() => {
 
 	// Reuse the SVG as favicon
 	const blob = new Blob([logoEl.outerHTML], { type: 'image/svg+xml' });
-	useFavicon(URL.createObjectURL(blob));
+	//remove disable n8n logo fav
+	// useFavicon(URL.createObjectURL(blob));
 });
 </script>
 
